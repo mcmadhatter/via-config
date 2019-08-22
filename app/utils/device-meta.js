@@ -28,7 +28,9 @@ import {
   LAYOUT_LUNAR,
   LAYOUT_G60,
   LAYOUT_PRIME_E,
-  LAYOUT_IDB_60
+  LAYOUT_IDB_60,
+  LAYOUT_LAUNCHPAD,
+  LAYOUT_HELIX
 } from './kle-parser';
 import {
   parseLayout,
@@ -56,7 +58,9 @@ import {
   MATRIX_LUNAR,
   MATRIX_G60,
   MATRIX_PRIME_E,
-  MATRIX_IDB_60
+  MATRIX_IDB_60,
+  MATRIX_LAUNCHPAD,
+  MATRIX_HELIX
 } from './layout-parser';
 import KEYBOARDS from '../keyboards';
 
@@ -250,6 +254,18 @@ const LEGACY_DEVICE_META_MAP: DeviceMetaMap = {
     layout: LAYOUT_IDB_60,
     matrixLayout: MATRIX_IDB_60,
     lights: false
+  },
+  0x13376007: {
+    name: 'Launchpad',
+    layout: LAYOUT_LAUNCHPAD,
+    matrixLayout: MATRIX_LAUNCHPAD,
+    lights: false
+  },
+  0xFEED3060: {
+    name: 'Helix Hotswap 5 Row',
+    layout: LAYOUT_HELIX,
+    matrixLayout: MATRIX_HELIX,
+    lights: true
   }
 };
 

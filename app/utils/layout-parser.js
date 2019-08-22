@@ -384,7 +384,20 @@ export const MATRIX_PRIME_E = `
 	{ K300,  K301,  KC_NO, K303,  K304,  KC_NO, K306,  KC_NO, K308,  KC_NO, KC_NO, K311,  K312 } \
 }
 `;
-
+export const MATRIX_LAUNCHPAD = `
+#define LAYOUT( \
+	K00, K01, \
+	K10, K11, \
+	K20, K21, \
+	K30, K31  \
+	) \
+	{ \
+		{ K00, K01 }, \
+		{ K10, K11 }, \
+		{ K20, K21 }, \
+		{ K30, K31 } \
+	}
+`;
 export const MATRIX_IDB_60 = `
 #define LAYOUT( \
     K00, K10, K01, K11, K02, K12, K03, K13, K04, K14, K05, K15, K06, K16, K07,\
@@ -405,7 +418,27 @@ export const MATRIX_IDB_60 = `
     { K90, KC_NO, KC_NO, K93, KC_NO, K95, K96 } \
 }
 `;
-
+export const MATRIX_HELIX = `
+#define LAYOUT( \
+  L00, L01, L02, L03, L04, L05,           R00, R01, R02, R03, R04, R05, \
+  L10, L11, L12, L13, L14, L15,           R10, R11, R12, R13, R14, R15, \
+  L20, L21, L22, L23, L24, L25,           R20, R21, R22, R23, R24, R25, \
+  L30, L31, L32, L33, L34, L35, L36, R36, R30, R31, R32, R33, R34, R35, \
+  L40, L41, L42, L43, L44, L45, L46, R46, R40, R41, R42, R43, R44, R45  \
+  ) \
+  { \
+    { L00, L01, L02, L03, L04, L05, KC_NO }, \
+    { L10, L11, L12, L13, L14, L15, KC_NO }, \
+    { L20, L21, L22, L23, L24, L25, KC_NO }, \
+    { L30, L31, L32, L33, L34, L35, L36 }, \
+    { L40, L41, L42, L43, L44, L45, L46 }, \
+    { R05, R04, R03, R02, R01, R00, KC_NO }, \
+    { R15, R14, R13, R12, R11, R10, KC_NO }, \
+    { R25, R24, R23, R22, R21, R20, KC_NO }, \
+    { R35, R34, R33, R32, R31, R30, R36 }, \
+    { R45, R44, R43, R42, R41, R40, R46 } \
+  }
+`;
 const LS = {
   START: 1,
   DEFINE: 2,

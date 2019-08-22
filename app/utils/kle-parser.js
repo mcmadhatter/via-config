@@ -45,6 +45,11 @@ export const LAYOUT_M6_A = `[{c:"#505557",t:"#d9d7d7",a:7},"x","x","x"],
 export const LAYOUT_M6_B = `[{c:"#505557",t:"#d9d7d7",a:7},"x","x","x"],
 ["x","x","x"]`;
 
+export const LAYOUT_LAUNCHPAD = `[{c:"#505557",t:"#d9d7d7",a:7},"x","x"],
+["x","x"],
+["x","x"],
+["x","x"]`;
+
 export const LAYOUT_M10_B = `[{c:"#505557",t:"#d9d7d7",a:7},"x","x","x"],
 ["x","x","x"],
 ["x","x","x"],
@@ -182,6 +187,12 @@ export const LAYOUT_IDB_60 = `["~","!\n1","@\n2","#\n3","$\n4","%\n5","^\n6","&\
 [{w:1.75},"Caps Lock","A","S","D","F","G","H","J","K","L",":\n;","\"\n'",{w:2.25},"Enter"],
 [{w:1.25},"Shift","NUBS","Z","X","C","V","B","N","M","<\n,",">\n.","?\n/",{w:1.75},"Shift","Fn"],
 [{w:1.5},"Ctrl","Win",{w:1.5},"Alt",{a:7,w:7},"",{a:4,w:1.5},"Alt","Win",{w:1.5},"Menu"]`;
+
+export const LAYOUT_HELIX = `[{a:7},"~","1","2","3","4","5",{x:3},"6","7","8","9","0","Del"],
+["Tab","Q","W","E","R","T",{x:3},"Y","U","I","O","P","Bksp"],
+["Ctrl","A","S","D","F","G",{x:3},"H","J","K","L",";","'"],
+["Shift","Z","X","C","V;","B","[",{x:1},"]","N","M",",",".","/","Enter"],
+["Adjust","Esc","Alt","GUI","EISU","Lower","",{x:1},"","Raise","KANA","Left","Down","Up","Right"]`;
 
 export function parseKLERaw(kle: string): ParsedKLE {
   const kleArr = kle.split(',\n');
