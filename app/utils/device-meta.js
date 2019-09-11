@@ -265,7 +265,7 @@ const LEGACY_DEVICE_META_MAP: DeviceMetaMap = {
     name: 'Helix Hotswap 5 Row',
     layout: LAYOUT_HELIX,
     matrixLayout: MATRIX_HELIX,
-    lights: true
+    lights: false
   }
 };
 
